@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/enkosa-school.css" />
+		<title>About us/Enkosa School</title>
+	</head>
+
+	<body class="about-us">
+		<nav>
+			<a href="index.html"
+				><img src="./img/logo.png" alt="logo" class="logo" />
+				<span>Preah Enkosa School</span>
+			</a>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a class="huidige-pagina" href="about-us.html">ABOUT US</a></li>
+				<li class="submenu">
+					<p class="open-menu-btn">ADMISSION</p>
+					<ul class="dropdown-menu">
+						<li><a href="admission.html">Admission</a></li>
+						<li><a href="admission-form.html">Admission form</a></li>
+						<li><a href="sponsorship.html">Sponsorship</a></li>
+					</ul>
+				</li>
+				<li><a href="covid-19.html">COVID 19</a></li>
+				<li><a href="academics.html">ACADEMICS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+		<h1>About us</h1>
+		<header class="slider-2"></header>
+		<div class="about-us-text">
+			<section>
+				<h2>About us</h2>
+				<hr class="divider-small" />
+				<p>
+					Preah Enkosa School is an state related institute which was
+					esthblished in 1980, our organization hold 3 grade levels of students
+					7 8 and grade 9. It is controlling under of state. It is located along
+					the river in Siem Reap province of Cambodia and has 60 teachers and
+					890 students. A class has between 35 to 40 students Study curriculum
+					has 12 subjects and it is devided in to two times a day. In the
+					morning start from 7 to 12 am and in the afternoon start from 1 to 5
+					pm.
+				</p>
+				<p>
+					It is a Khmer Secondary school located at the center in Siem Reap city
+					and 7km from the World famous Angkor Wat temple and less than 2 km
+					from the touristic pubstreet. Because of the international development
+					of Siem Reap city, we have each year qualified volunteer teachers from
+					different countries to come to our school to develop the English
+					skills of our students.
+				</p>
+				<p>
+					The school arranges scholarships for more than fifty students each
+					academic year, it is a important contribution to help them to expand
+					their knowledge. experienced, motivated and hardworking educators
+					offer the students the best possible foundation to execute their
+					creativity, skills and academics in a world where the theory and
+					practical education mesh. The school has glory to provide all kinds of
+					academic facilities of their nearly eight hundred pupils.
+				</p>
+			</section>
+			<figure class="about-img">
+				<img class="width-full" src="./img/logo-middel.jpg" alt="logo" />
+			</figure>
+		</div>
+		<hr class="divider-big" />
+		<div class="about-text">
+			<section>
+				<h2>Vision</h2>
+				<hr class="divider-small" />
+				<p>
+					Our vision is to make Preah Enkosa School as the centre of cultivating
+					knowledge, skill and confidence for bringing excellence in education
+					which helps the individuals to exploit their inner capacity to
+					contribute in the overall development of the nation.
+				</p>
+			</section>
+			<section>
+				<h2>Mission</h2>
+				<hr class="divider-small" />
+				<p>
+					Our mission involves helping the students to get deep information of
+					subject matter that accomplishes quality education by providing the
+					best possible education within the reach of Nepalese students, by
+					raising the intellectual, academic and practical achievement of the
+					young people as well as by facilitating the ethical norms and social
+					responsibilities.
+				</p>
+			</section>
+		</div>
+
+		<footer>
+			<article class="our-school">
+				<h6 class="footer-title">Our School</h6>
+				<p>
+					A decade's worth of rich history and goodwill with the public schools
+					surrounding plus an extensive community consultation process prepared
+					us for building.
+				</p>
+			</article>
+
+			<section class="about-us">
+				<h6 class="footer-title">About us</h6>
+				<ul>
+					<li><a href="admission.html">Admission</a></li>
+					<li><a href="sponsorship.html">Sponsorships</a></li>
+					<li><a href="academics.html">Academics</a></li>
+					<li><a href="covid-19.html">COVID 19</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</section>
+
+			<article class="openhours">
+				<h6 class="footer-title">Open hours</h6>
+				<ul class="openhours">
+					<li><span>Monday:</span> <span>7:00-16:30</span></li>
+					<li><span>Tuesday:</span> <span>7:00-16:30</span></li>
+					<li><span>Wednesday:</span> <span>7:00-16:30</span></li>
+					<li><span>Thursday:</span> <span>7:00-16:30</span></li>
+					<li><span>Friday:</span> <span>7:00-16:30 </span></li>
+					<li><span>Saturday:</span> <span>7:00-16:30</span></li>
+					<li><span>Sunday:</span> <span>Closed</span></li>
+				</ul>
+			</article>
+
+			<article class="contact">
+				<h6 class="footer-title">Contact</h6>
+				<ul>
+					<li class="telefoon">
+						<img src="./img/phone-icon.png" alt="Phone icon" />
+						<a href="tel:85582563145">+855-82563145</a>
+					</li>
+					<li class="email">
+						<img src="./img/email-icon.png" alt="email icon" />
+						<p>huyeanhong@ymail.com</p>
+					</li>
+					<li class="adres">
+						<img src="./img/adres-icon.png" alt="adres icon" />
+						<p>Slorkram Commune, Siem Reap</p>
+					</li>
+				</ul>
+			</article>
+		</footer>
+
+		<script>
+			const openMenuBtn = document.querySelector('.open-menu-btn');
+			const dropdownMenu = document.querySelector('.dropdown-menu');
+
+			openMenuBtn.addEventListener('click', () => {
+				dropdownMenu.classList.toggle('show-submenu');
+			});
+
+			const title = document.querySelector('h1');
+
+			title.addEventListener('click', () => {
+				title.classList.add('title-clicked');
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/enkosa-school.css" />
+		<title>sponsorship/Enkosa School</title>
+	</head>
+
+	<body class="page-sponsorship">
+		<nav>
+			<a href="index.html"
+				><img src="./img/logo.png" alt="logo" class="logo" />
+				<span>Preah Enkosa School</span>
+			</a>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about-us.html">ABOUT US</a></li>
+				<li class="submenu">
+					<p class="open-menu-btn">ADMISSION</p>
+					<ul class="dropdown-menu">
+						<li><a href="admission.html">Admission</a></li>
+						<li><a href="admission-form.html">Admission form</a></li>
+						<li><a href="sponsorship.html">Sponsorship</a></li>
+					</ul>
+				</li>
+				<li><a href="covid-19.html">COVID 19</a></li>
+				<li><a href="academics.html">ACADEMICS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+		<h1>Sponsorship</h1>
+		<header class="slider-5"></header>
+		<div class="sponsorship">
+			<section>
+				<h2>Sponsorships</h2>
+				<hr class="divider-small" />
+				<p>
+					In each academic year there comes hundred of students come to our
+					school those are from the family who are living below the poverty
+					line. In cooperation with the local municipality we make financial
+					support available every year in the amount of USD 10,000 for these
+					students. This amount will be divided among the 60 - 100 students
+					during the sponsorship program that is organized twice per academic
+					year
+				</p>
+
+				<p>
+					Talented students also receive extra support from international
+					organizations and local NGOs through our school. Such as
+					extracurricular English lessons from Angkor Tree project and New Hope
+					Cambodia. A number of our students have also been sponsored through
+					Asia Youth Foundation at ACE.
+				</p>
+			</section>
+
+			<img class="sponsorship-image" src="./img/foto21.gif" alt="student" />
+		</div>
+		<hr class="divider-big" />
+
+		<article class="kind-sponsorships">
+			<h2>Kind of sponsorships</h2>
+			<hr class="divider-small" />
+			<h3>Municipality Support</h3>
+			<p>
+				This support is intended for students who lives in a family that has
+				less than 30 USD per person per month to spend.
+			</p>
+			<h3>Talent Support</h3>
+			<p>
+				This support is intended for students who has talent in certain subjects
+				as English, mathematics, social studies. Students take these subjects
+				outside the regular school, for example by New Hope and Angkor tree
+				project.
+			</p>
+			<h3>International Support</h3>
+			<p>
+				We also work with NGO's located outside Cambodia, representatives of
+				this NGO visit our school every year and also select students from poor
+				family. they provide these students with study materials, such as
+				pencil, pens, exercise books, textbooks, uniforms and bags. Some
+				students who can study well are also sponsored by them in the long term.
+			</p>
+		</article>
+
+		<section class="partners">
+			<h2>Our partners</h2>
+			<hr class="divider-small" />
+			<img class="sponsor-partner" src="./img/newhope-logo.png" alt="logo" />
+			<img
+				class="sponsor-partner"
+				src="./img/asiayouthfoundation-logo.jpg"
+				alt="logo"
+			/>
+			<img
+				class="sponsor-partner"
+				src="./img/angkor-tree-logo.png"
+				alt="logo"
+			/>
+		</section>
+
+		<footer>
+			<article class="our-school">
+				<h6 class="footer-title">Our School</h6>
+				<p>
+					A decade's worth of rich history and goodwill with the public schools
+					surrounding plus an extensive community consultation process prepared
+					us for building.
+				</p>
+			</article>
+
+			<section class="about-us">
+				<h6 class="footer-title">About us</h6>
+				<ul>
+					<li><a href="admission.html">Admission</a></li>
+					<li><a href="sponsorship.html">Sponsorships</a></li>
+					<li><a href="academics.html">Academics</a></li>
+					<li><a href="covid-19.html">COVID 19</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</section>
+
+			<article class="openhours">
+				<h6 class="footer-title">Open hours</h6>
+				<ul class="openhours">
+					<li><span>Monday:</span> <span>7:00-16:30</span></li>
+					<li><span>Tuesday:</span> <span>7:00-16:30</span></li>
+					<li><span>Wednesday:</span> <span>7:00-16:30</span></li>
+					<li><span>Thursday:</span> <span>7:00-16:30</span></li>
+					<li><span>Friday:</span> <span>7:00-16:30 </span></li>
+					<li><span>Saturday:</span> <span>7:00-16:30</span></li>
+					<li><span>Sunday:</span> <span>Closed</span></li>
+				</ul>
+			</article>
+
+			<article class="contact">
+				<h6 class="footer-title">Contact</h6>
+				<ul>
+					<li class="telefoon">
+						<img src="./img/phone-icon.png" alt="Phone icon" />
+						<a href="tel:85582563145">+855-82563145</a>
+					</li>
+					<li class="email">
+						<img src="./img/email-icon.png" alt="email icon" />
+						<p>huyeanhong@ymail.com</p>
+					</li>
+					<li class="adres">
+						<img src="./img/adres-icon.png" alt="adres icon" />
+						<p>Slorkram Commune, Siem Reap</p>
+					</li>
+				</ul>
+			</article>
+		</footer>
+
+		<script>
+			const openMenuBtn = document.querySelector('.open-menu-btn');
+			const dropdownMenu = document.querySelector('.dropdown-menu');
+
+			openMenuBtn.addEventListener('click', () => {
+				dropdownMenu.classList.toggle('show-submenu');
+			});
+
+			const title = document.querySelector('h1');
+
+			title.addEventListener('click', () => {
+				title.classList.add('title-clicked');
+			});
+		</script>
+	</body>
+</html>

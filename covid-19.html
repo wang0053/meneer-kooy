@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/enkosa-school.css" />
+		<title>Covid-19/Enkosa School</title>
+	</head>
+
+	<body class="covid-19">
+		<nav>
+			<a href="index.html"
+				><img src="./img/logo.png" alt="logo" class="logo" />
+				<span>Preah Enkosa School</span>
+			</a>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about-us.html">ABOUT US</a></li>
+				<li class="submenu">
+					<p class="open-menu-btn huidige-pagina">ADMISSION</p>
+					<ul class="dropdown-menu">
+						<li><a href="admission.html">Admission</a></li>
+						<li><a href="admission-form.html">Admission form</a></li>
+						<li><a href="sponsorship.html">Sponsorship</a></li>
+					</ul>
+				</li>
+				<li><a class="huidige-pagina" href="covid-19.html">COVID 19</a></li>
+				<li><a href="academics.html">ACADEMICS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+		<h1>Covid-19</h1>
+		<header class="slider-7"></header>
+
+		<div class="covid-measures">
+			<section>
+				<h2>Covid Measures</h2>
+				<hr class="divider-small" />
+				<ul>
+					<li>&#10004; Vaccination card</li>
+					<li>&#10004; Temperature check</li>
+					<li>&#10004; Wearing mask</li>
+					<li>&#10004; Halved classes</li>
+					<li>&#10004; Social distancing</li>
+					<li>&#10004; Desinfections</li>
+					<li>&#10004; Medical support</li>
+				</ul>
+			</section>
+			<img class="covid-image" src="./img/foto22.png" alt="student" />
+		</div>
+		<hr class="divider-big" />
+
+		<div class="covid-protection">
+			<article>
+				<div>
+					<h3>Vaccination Card</h3>
+					<p>
+						The school environment is safe because all students are vaccinated,
+						so that they are well protected if they become infected.
+					</p>
+				</div>
+				<img
+					class="covid-protection-image"
+					src="./img/vaccination-card.png"
+					alt="vaccination card"
+				/>
+			</article>
+
+			<article>
+				<div>
+					<h3>Mask & Temperature check</h3>
+					<p>
+						The temperature of the students will be checked on arrival at
+						school, also everyone is obliged to wear a face mask both in the
+						schoolyard and in the classroom temperature check & Wearing mask
+					</p>
+				</div>
+				<img
+					class="covid-protection-image"
+					src="./img/covid19.png"
+					alt="covid protection"
+				/>
+			</article>
+
+			<article>
+				<div>
+					<h3>Medical Support</h3>
+					<p>
+						Since the spring of September 2020, a medical center has been opened
+						by the local community for students who have corona-related
+						symptons. They have large numbers of antigen testing capabilities
+						available which are donated by foreign countries.
+					</p>
+				</div>
+				<img
+					class="covid-protection-image"
+					src="./img/foto2.jpg"
+					alt="school field"
+				/>
+			</article>
+		</div>
+
+		<footer>
+			<article class="our-school">
+				<h6 class="footer-title">Our School</h6>
+				<p>
+					A decade's worth of rich history and goodwill with the public schools
+					surrounding plus an extensive community consultation process prepared
+					us for building.
+				</p>
+			</article>
+
+			<section class="about-us">
+				<h6 class="footer-title">About us</h6>
+				<ul>
+					<li><a href="admission.html">Admission</a></li>
+					<li><a href="sponsorship.html">Sponsorships</a></li>
+					<li><a href="academics.html">Academics</a></li>
+					<li><a href="covid-19.html">COVID 19</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</section>
+
+			<article class="openhours">
+				<h6 class="footer-title">Open hours</h6>
+				<ul class="openhours">
+					<li><span>Monday:</span> <span>7:00-16:30</span></li>
+					<li><span>Tuesday:</span> <span>7:00-16:30</span></li>
+					<li><span>Wednesday:</span> <span>7:00-16:30</span></li>
+					<li><span>Thursday:</span> <span>7:00-16:30</span></li>
+					<li><span>Friday:</span> <span>7:00-16:30 </span></li>
+					<li><span>Saturday:</span> <span>7:00-16:30</span></li>
+					<li><span>Sunday:</span> <span>Closed</span></li>
+				</ul>
+			</article>
+
+			<article class="contact">
+				<h6 class="footer-title">Contact</h6>
+				<ul>
+					<li class="telefoon">
+						<img src="./img/phone-icon.png" alt="Phone icon" />
+						<a href="tel:85582563145">+855-82563145</a>
+					</li>
+					<li class="email">
+						<img src="./img/email-icon.png" alt="email icon" />
+						<p>huyeanhong@ymail.com</p>
+					</li>
+					<li class="adres">
+						<img src="./img/adres-icon.png" alt="adres icon" />
+						<p>Slorkram Commune, Siem Reap</p>
+					</li>
+				</ul>
+			</article>
+		</footer>
+
+		<script>
+			const openMenuBtn = document.querySelector('.open-menu-btn');
+			const dropdownMenu = document.querySelector('.dropdown-menu');
+
+			openMenuBtn.addEventListener('click', () => {
+				dropdownMenu.classList.toggle('show-submenu');
+			});
+
+			const title = document.querySelector('h1');
+
+			title.addEventListener('click', () => {
+				title.classList.add('title-clicked');
+			});
+		</script>
+	</body>
+</html>

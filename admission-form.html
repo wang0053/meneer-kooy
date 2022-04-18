@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/enkosa-school.css" />
+		<title>Admission form/Enkosa School</title>
+	</head>
+
+	<body class="admission-form-page">
+		<nav>
+			<a href="index.html"
+				><img src="./img/logo.png" alt="logo" class="logo" />
+				<span>Preah Enkosa School</span>
+			</a>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about-us.html">ABOUT US</a></li>
+				<li class="submenu">
+					<p class="open-menu-btn huidige-pagina">ADMISSION</p>
+					<ul class="dropdown-menu">
+						<li><a href="admission.html">Admission</a></li>
+						<li><a href="admission-form.html">Admission form</a></li>
+						<li><a href="sponsorship.html">Sponsorship</a></li>
+					</ul>
+				</li>
+				<li><a href="covid-19.html">COVID 19</a></li>
+				<li><a href="academics.html">ACADEMICS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+		<h1>Admission form</h1>
+		<header class="slider-8"></header>
+
+		<article class="admission-form">
+			<h2>Admission form</h2>
+			<hr class="divider-small" />
+
+			<form
+				action="https://jkorpela.fi/cgi-bin/echo.cgi"
+				method="post"
+				id="admission-form"
+			>
+				<fieldset class="form-admin">
+					<legend>Personal Information</legend>
+
+					<p>
+						<label for="first-name">First name:</label>
+						<input
+							id="first-name"
+							type="text"
+							placeholder="first-name"
+							name="first-name"
+							required
+						/>
+					</p>
+
+					<p>
+						<label for="last-name">Last name:</label>
+						<input
+							id="last-name"
+							type="text"
+							placeholder="last-name"
+							name="last-name"
+							required
+						/>
+					</p>
+
+					<p>
+						<label for="gender">Gender:</label>
+						<select name="gender" id="gender">
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+						</select>
+					</p>
+
+					<p>
+						<label for="date-of-birth">Date of Birth:</label>
+						<input
+							id="date-of-birth"
+							name="date-of-birth"
+							type="date"
+							required
+						/>
+					</p>
+
+					<p>
+						<label for="phone-number">Phone number:</label>
+						<input
+							id="phone-number"
+							type="tel"
+							placeholder="Phone-number"
+							name="phone-number"
+							required
+						/>
+					</p>
+
+					<p>
+						<label for="email">Email adres:</label>
+						<input
+							id="email"
+							type="email"
+							placeholder="email"
+							pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+							title="Een email adres moet een @ teken bestaan en .nl of .com"
+							name="email"
+							required
+						/>
+					</p>
+
+					<p>
+						<label for="adress">Adress:</label>
+						<input
+							id="adress"
+							type="text"
+							placeholder="adress"
+							name="adress"
+							required
+						/>
+					</p>
+
+					<p>
+						<label for="postal-code">ZIP Code:</label>
+						<input
+							id="postal-code"
+							name="zip-code"
+							type="text"
+							placeholder="zip-code"
+							required
+						/>
+					</p>
+
+					<p>
+						<label for="city">City:</label>
+						<input
+							id="city"
+							type="text"
+							placeholder="city"
+							name="city"
+							required
+						/>
+					</p>
+				</fieldset>
+
+				<fieldset class="form-admin">
+					<legend>Final grade</legend>
+
+					<p>
+						<label for="former-school-name">Former School's Name:</label>
+						<input
+							id="former-school-name"
+							type="text"
+							placeholder="Former-School"
+							name="former-school-name"
+							required
+						/>
+					</p>
+
+					<p>
+						<label for="school-adress">Former School's Adress:</label>
+						<input
+							id="school-adress"
+							type="text"
+							placeholder="Former School"
+							name="former-school-adress"
+							required
+						/>
+					</p>
+
+					<p>
+						<label for="number-of-rank">Number of Rank:</label>
+						<input
+							id="number-of-rank"
+							type="number"
+							placeholder="number-of-Rank"
+							name="number-of-rank"
+							required
+						/>
+					</p>
+
+					<p>
+						<label for="number-of-students">Number of students in class:</label>
+						<input
+							id="number-of-students"
+							type="number"
+							placeholder="Number of Students"
+							name="number-of-students"
+							required
+						/>
+					</p>
+
+					<p>
+						<label for="grade-points">Total grade points:</label>
+						<input
+							id="grade-points"
+							name="grade-points"
+							type="range"
+							value="0"
+							min="1"
+							max="50"
+							step="1"
+						/>
+					</p>
+
+					<p id="number-grade-points">Select the amount of points</p>
+				</fieldset>
+
+				<button type="submit">Submit</button>
+			</form>
+		</article>
+		<footer>
+			<article class="our-school">
+				<h6 class="footer-title">Our School</h6>
+				<p>
+					A decade's worth of rich history and goodwill with the public schools
+					surrounding plus an extensive community consultation process prepared
+					us for building.
+				</p>
+			</article>
+
+			<section class="about-us">
+				<h6 class="footer-title">About us</h6>
+				<ul>
+					<li><a href="admission.html">Admission</a></li>
+					<li><a href="sponsorship.html">Sponsorships</a></li>
+					<li><a href="academics.html">Academics</a></li>
+					<li><a href="covid-19.html">COVID 19</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</section>
+
+			<article class="openhours">
+				<h6 class="footer-title">Open hours</h6>
+				<ul class="openhours">
+					<li><span>Monday:</span> <span>7:00-16:30</span></li>
+					<li><span>Tuesday:</span> <span>7:00-16:30</span></li>
+					<li><span>Wednesday:</span> <span>7:00-16:30</span></li>
+					<li><span>Thursday:</span> <span>7:00-16:30</span></li>
+					<li><span>Friday:</span> <span>7:00-16:30 </span></li>
+					<li><span>Saturday:</span> <span>7:00-16:30</span></li>
+					<li><span>Sunday:</span> <span>Closed</span></li>
+				</ul>
+			</article>
+
+			<article class="contact">
+				<h6 class="footer-title">Contact</h6>
+				<ul>
+					<li class="telefoon">
+						<img src="./img/phone-icon.png" alt="Phone icon" />
+						<a href="tel:85582563145">+855-82563145</a>
+					</li>
+					<li class="email">
+						<img src="./img/email-icon.png" alt="email icon" />
+						<p>huyeanhong@ymail.com</p>
+					</li>
+					<li class="adres">
+						<img src="./img/adres-icon.png" alt="adres icon" />
+						<p>Slorkram Commune, Siem Reap</p>
+					</li>
+				</ul>
+			</article>
+		</footer>
+
+		<script>
+			var slider = document.getElementById('grade-points');
+			var text = document.getElementById('number-grade-points');
+
+			slider.addEventListener('change', () => {
+				text.innerText = `You have reached ${slider.value} points at primary school`;
+			});
+
+			const openMenuBtn = document.querySelector('.open-menu-btn');
+			const dropdownMenu = document.querySelector('.dropdown-menu');
+
+			openMenuBtn.addEventListener('click', () => {
+				dropdownMenu.classList.toggle('show-submenu');
+			});
+
+			const title = document.querySelector('h1');
+
+			title.addEventListener('click', () => {
+				title.classList.add('title-clicked');
+			});
+		</script>
+	</body>
+</html>
